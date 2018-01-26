@@ -34,9 +34,9 @@ main()
        float ex1=(float) (((combination(A,1)/combination(samplespace,1))*(combination(B+C,1)/combination(samplespace-1,1)))*2);
 printf("P(both computers are good)=%.4f\n",combination(A,2)/combination(samplespace,2));
        printf("P(both computers have Major Defect)=%.4f\n",combination(C,2)/combination(samplespace,2));
-       printf("P(atleast One computer is good)=%.4f\n",ex1+(combination(A,2)/combination(samplespace,2)));
-       printf("P(atmost one computer is good)=%.4f\n",(ex1+(combination(B+C,2)/combination(samplespace,2))));
-       printf("P(exactly one computer is good)=%.4f\n",ex1);
+       printf("P(atleast One computer is good)=%.4f\n",ex1/2+(combination(A,2)/combination(samplespace,2)));
+       printf("P(atmost one computer is good)=%.4f\n",(ex1/2+(combination(B+C,2)/combination(samplespace,2))));
+       printf("P(exactly one computer is good)=%.4f\n",ex1/2);
        printf("P(no computer has major effect)=%.4f\n",(combination(A+B,2)/combination(samplespace,2)));
        printf("P(no computer is good)=%.4f\n",combination(B+C,2)/combination(samplespace,2));
     }
